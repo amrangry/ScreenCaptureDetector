@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ScreenCaptureDetector_Example' do
+  pod 'ScreenCaptureDetector', :path => '../'
+
+  target 'ScreenCaptureDetector_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
