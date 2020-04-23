@@ -1,0 +1,16 @@
+PODS:
+  - ScreenCaptureDetector (0.1.0)
+
+DEPENDENCIES:
+  - ScreenCaptureDetector (from `../`)
+
+EXTERNAL SOURCES:
+  ScreenCaptureDetector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ScreenCaptureDetector: f6a47afaa45cb0afd7b62a96567fc40a6deafd3b
+
+PODFILE CHECKSUM: ddc31c36825c35a6b22897c0975e8f2846e8c5fb
+
+COCOAPODS: 1.9.1

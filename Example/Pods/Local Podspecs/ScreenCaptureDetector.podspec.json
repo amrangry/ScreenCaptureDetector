@@ -1,0 +1,22 @@
+{
+  "name": "ScreenCaptureDetector",
+  "version": "0.1.0",
+  "summary": "A short description of ScreenCaptureDetector.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amrangry/ScreenCaptureDetector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amrangry": "amr.elghadban@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/amrangry/ScreenCaptureDetector.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ScreenCaptureDetector/Classes/**/*"
+}

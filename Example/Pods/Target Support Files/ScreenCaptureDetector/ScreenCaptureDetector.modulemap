@@ -1,0 +1,6 @@
+framework module ScreenCaptureDetector {
+  umbrella header "ScreenCaptureDetector-umbrella.h"
+
+  export *
+  module * { export * }
+}
