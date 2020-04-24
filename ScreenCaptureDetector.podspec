@@ -27,11 +27,13 @@ TODO: Add long description of the pod here.
   s.author           = { 'amrangry' => 'amr.elghadban@gmail.com' }
   s.source           = { :git => 'https://github.com/amrangry/ScreenCaptureDetector.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'ScreenCaptureDetector/Classes/**/*'
-  
+   s.ios.deployment_target = '8.0'
+  #s.source_files = 'ScreenCaptureDetector/Classes/**/*'
+  s.source_files = 'Source/**/*.swift'
+  s.swift_version = '5.0'
+  s.platyforms = {
+      "ios" : "8.0"
+  }
   # s.resource_bundles = {
   #   'ScreenCaptureDetector' => ['ScreenCaptureDetector/Assets/*.png']
   # }

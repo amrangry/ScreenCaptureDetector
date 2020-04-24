@@ -13,9 +13,9 @@
 		3C7F6CE1B32AFC6CC0CFDE6470095B3D /* Pods-ScreenCaptureDetector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 971D92F51401221E46446DAD26AAD373 /* Pods-ScreenCaptureDetector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		429504B0A641B95EE17604ACFDA6806B /* Pods-ScreenCaptureDetector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8A64AA30AA8483E457CA8DC9E5D464 /* Pods-ScreenCaptureDetector_Example-dummy.m */; };
 		452EA549C9A758C56166859B9A7278D2 /* ScreenCaptureDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE599752F97C999F64EEEFF42599C448 /* ScreenCaptureDetector-dummy.m */; };
+		84E128DC24522D3500F5ACEF /* ScreenCaptureRecordingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E128DA2452278D00F5ACEF /* ScreenCaptureRecordingDetector.swift */; };
 		98FC059D2F6A2DCE6A68B6C760329A35 /* Pods-ScreenCaptureDetector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40581CDC01C745532E0C24FE36467C27 /* Pods-ScreenCaptureDetector_Tests-dummy.m */; };
 		D5EE4D5F5F3CE610F28610A233F96940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E3DBD8C69CEF94AC41D8AEA276170170 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8689DE59076BB9CAE6CCE6B3401EEE /* ReplaceMe.swift */; };
 		EE1D5349CD6BD7844EE45F9D9692246B /* ScreenCaptureDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4DAF4E77D2A4E57F211B3C85A576A2 /* ScreenCaptureDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,13 +39,13 @@
 /* Begin PBXFileReference section */
 		09ABE6D4D771735AE937140063072180 /* Pods-ScreenCaptureDetector_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenCaptureDetector_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0DD2B5481B01B8B81F7A14809223C55C /* Pods-ScreenCaptureDetector_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenCaptureDetector_Tests-Info.plist"; sourceTree = "<group>"; };
-		0F2617D87961BB459B6A66D4ECE77B70 /* Pods_ScreenCaptureDetector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreenCaptureDetector_Example.framework; path = "Pods-ScreenCaptureDetector_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2617D87961BB459B6A66D4ECE77B70 /* Pods_ScreenCaptureDetector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenCaptureDetector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1440DCD007F271A19587E8EC0D9974BC /* Pods-ScreenCaptureDetector_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScreenCaptureDetector_Tests.modulemap"; sourceTree = "<group>"; };
-		1C59CE54F59BC768F009D5AB5A5D6A40 /* ScreenCaptureDetector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ScreenCaptureDetector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1C59CE54F59BC768F009D5AB5A5D6A40 /* ScreenCaptureDetector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScreenCaptureDetector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		205DE81C628B525B5B7C49B501BAED97 /* Pods-ScreenCaptureDetector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreenCaptureDetector_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3B574CD931BB3DBA1DBBD35C82717DE1 /* Pods-ScreenCaptureDetector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreenCaptureDetector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3BE41448D191DAD58C01247A94637E35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3BE41448D191DAD58C01247A94637E35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40581CDC01C745532E0C24FE36467C27 /* Pods-ScreenCaptureDetector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreenCaptureDetector_Tests-dummy.m"; sourceTree = "<group>"; };
 		4B94C3804C274D54D1CA44F31C9D4544 /* ScreenCaptureDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScreenCaptureDetector-prefix.pch"; sourceTree = "<group>"; };
 		4EDE441B77440962016051EDA87B5F7B /* Pods-ScreenCaptureDetector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenCaptureDetector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -53,20 +53,20 @@
 		604F0FD0913D8EC917885E4336966C0F /* Pods-ScreenCaptureDetector_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenCaptureDetector_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7BA648119C85DB2159C8E48B37F288F2 /* Pods-ScreenCaptureDetector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenCaptureDetector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		802904DB3B713C135511BF44C9A04FD4 /* Pods-ScreenCaptureDetector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenCaptureDetector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		85CA04028D6C59077129AB6899D679C9 /* Pods_ScreenCaptureDetector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreenCaptureDetector_Tests.framework; path = "Pods-ScreenCaptureDetector_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E128DA2452278D00F5ACEF /* ScreenCaptureRecordingDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCaptureRecordingDetector.swift; sourceTree = "<group>"; };
+		85CA04028D6C59077129AB6899D679C9 /* Pods_ScreenCaptureDetector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenCaptureDetector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86710DF0644B0590B5A5890468DAC364 /* ScreenCaptureDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScreenCaptureDetector.debug.xcconfig; sourceTree = "<group>"; };
 		8D1B6418167F6C4250FF9D2A0BC6AF59 /* ScreenCaptureDetector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScreenCaptureDetector-Info.plist"; sourceTree = "<group>"; };
 		9429756B979BE67039A6B5C8F9316850 /* Pods-ScreenCaptureDetector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenCaptureDetector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		952EEC17772764C7865647CC4C36C62F /* Pods-ScreenCaptureDetector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenCaptureDetector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		971D92F51401221E46446DAD26AAD373 /* Pods-ScreenCaptureDetector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenCaptureDetector_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F4BB72DDDBE048277CBB11675C215D4 /* Pods-ScreenCaptureDetector_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenCaptureDetector_Example-Info.plist"; sourceTree = "<group>"; };
 		A24D43DBE68D52AAEF8758F6B21D2087 /* ScreenCaptureDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScreenCaptureDetector.modulemap; sourceTree = "<group>"; };
-		AB486E4E11D0E6898A6DD9970E54217C /* ScreenCaptureDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenCaptureDetector.framework; path = ScreenCaptureDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB486E4E11D0E6898A6DD9970E54217C /* ScreenCaptureDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenCaptureDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE599752F97C999F64EEEFF42599C448 /* ScreenCaptureDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScreenCaptureDetector-dummy.m"; sourceTree = "<group>"; };
-		C74E2C3F3D77AD0D13B0063B8E2D56C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C74E2C3F3D77AD0D13B0063B8E2D56C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E41786B493E9C7DF2F8FD9C224EDD52C /* Pods-ScreenCaptureDetector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScreenCaptureDetector_Example.modulemap"; sourceTree = "<group>"; };
-		EA8689DE59076BB9CAE6CCE6B3401EEE /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ScreenCaptureDetector/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		EB78825C34D705431C8176F575C5C53C /* ScreenCaptureDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScreenCaptureDetector.release.xcconfig; sourceTree = "<group>"; };
 		FA4DAF4E77D2A4E57F211B3C85A576A2 /* ScreenCaptureDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScreenCaptureDetector-umbrella.h"; sourceTree = "<group>"; };
 		FC8A64AA30AA8483E457CA8DC9E5D464 /* Pods-ScreenCaptureDetector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreenCaptureDetector_Example-dummy.m"; sourceTree = "<group>"; };
@@ -170,12 +170,20 @@
 		66765C285B32C678C2781CD8500D0556 /* ScreenCaptureDetector */ = {
 			isa = PBXGroup;
 			children = (
-				EA8689DE59076BB9CAE6CCE6B3401EEE /* ReplaceMe.swift */,
+				84E128D92452273200F5ACEF /* Source */,
 				58B765451A458678FE9405C8D115C008 /* Pod */,
 				38290A6B2E2FB11E2C48793206B0A4AD /* Support Files */,
 			);
 			name = ScreenCaptureDetector;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		84E128D92452273200F5ACEF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84E128DA2452278D00F5ACEF /* ScreenCaptureRecordingDetector.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		A4838EB9D4DBF45586C68C1D3C8C0328 /* Products */ = {
@@ -317,6 +325,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					F064115CC9D8A6DE30628B36FA62E42F = {
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,7 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3DBD8C69CEF94AC41D8AEA276170170 /* ReplaceMe.swift in Sources */,
+				84E128DC24522D3500F5ACEF /* ScreenCaptureRecordingDetector.swift in Sources */,
 				452EA549C9A758C56166859B9A7278D2 /* ScreenCaptureDetector-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +424,7 @@
 			baseConfigurationReference = 7BA648119C85DB2159C8E48B37F288F2 /* Pods-ScreenCaptureDetector_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -433,6 +447,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -445,6 +460,7 @@
 			baseConfigurationReference = 952EEC17772764C7865647CC4C36C62F /* Pods-ScreenCaptureDetector_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -467,6 +483,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -591,8 +609,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
