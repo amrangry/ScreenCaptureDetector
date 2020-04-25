@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        /*
+         /*
          ///How to use using NotificationCenter
          let monitor = ScreenCaptureRecordingDetector()
          monitor.delegate = nil
@@ -27,7 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          NotificationCenter.default.addObserver(self, selector: #selector(dimissScreen), name: .screenCapturingEnded, object: nil)
          */
         
-        /* ///How to use using Custom view
+         /*
+         ///How to use using Custom view
          let appDelegate = UIApplication.shared.delegate as? AppDelegate
          let overWindow = appDelegate?.window
          let customView = UIView.init(frame: overWindow?.bounds ?? CGRect.init(x: 0, y: 0, width: 200, height: 200))

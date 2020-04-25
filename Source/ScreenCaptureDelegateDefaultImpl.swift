@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 final class ScreenCaptureDelegateDefaultImpl: NSObject {
-   
+    
     static let `default` = ScreenCaptureDelegateDefaultImpl()
     
     var customView: UIView
@@ -23,9 +23,13 @@ final class ScreenCaptureDelegateDefaultImpl: NSObject {
         
         customView = UIView()
         customView.backgroundColor = .red
-    
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        window = appDelegate?.window
+        
+        //        if let applicationwindow = UIApplication.shared.delegate?.window {
+        //            window = applicationwindow
+        //        }
+        if let applicationWindow = UIApplication.shared.windows.first {
+            window = applicationWindow
+        }
         
         super.init()
     }
