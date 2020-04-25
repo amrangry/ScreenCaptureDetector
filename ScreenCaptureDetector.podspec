@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ScreenCaptureDetector'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ScreenCaptureDetector.'
+  s.summary          = 'ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,21 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+
+   s.description     = <<-DESC
+   ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded by running task in background check every 1 sec check
+   
+   * Headings (H1 - H6) and Body Text.
+   * Images (with captions), multiple images per row.
+   * Multi column text (can be used for borderless tables too)
+   * UIView instances (good for cover pages, etc)
+   * Any attributed string
+   
+                         DESC
+                         
+  # s.description      = <<-DESC
+  # TODO: Add long description of the pod here.
+                      # DESC
 
   s.homepage         = 'https://github.com/amrangry/ScreenCaptureDetector'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -31,8 +43,8 @@ TODO: Add long description of the pod here.
   #s.source_files = 'ScreenCaptureDetector/Classes/**/*'
   s.source_files = 'Source/**/*.swift'
   s.swift_version = '5.0'
-  s.platyforms = {
-      "ios" : "8.0"
+  s.platforms = {
+      "ios": "8.0"
   }
   # s.resource_bundles = {
   #   'ScreenCaptureDetector' => ['ScreenCaptureDetector/Assets/*.png']

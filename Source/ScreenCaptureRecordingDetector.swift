@@ -8,28 +8,60 @@
 
 import UIKit
 
-public extension Notification.Name {
-    static let screenCapturingStarted = Notification.Name(rawValue: "screenCapturingStarted")
-    static let screenCapturingEnded = Notification.Name(rawValue: "screenCapturingEnded")
-}
-
+/// ScreenCaptureRecordingDetector Class
+/// reponsible for start and end monitoring for screencapture
 public class ScreenCaptureRecordingDetector {
     
-    public static let shared = ScreenCaptureRecordingDetector()
+    /// default instance for handling the Capture screen
+    public static let `default` = ScreenCaptureRecordingDetector()
     
-    var gameTimer: Timer?
-    var screen: UIScreen
-    var imageview: UIImageView {
-        let view = UIImageView(image: UIImage(named: "check_icon"))
-        return view
+    var delegate: ScreenCaptureDelegate? //swiftlint:disable:this weak_delegate
+    internal var gameTimer: Timer?
+    internal var stop: Bool?
+    internal let screen: UIScreen = UIScreen.main
+    
+    init() {
+        //screen  = UIScreen.main
+        let handler = ScreenCaptureDelegateDefaultImpl.default
+        delegate = handler
     }
     
-    private init() {
-        screen  = UIScreen.main
-        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+    convenience init(delegate: ScreenCaptureDelegate) {
+        self.init()
+        self.delegate = delegate
     }
     
-    @objc func runTimedCode() {
+    /// start monitoring for screen capture
+    open func startMonitor() {
+        if #available(iOS 10.0, *) {
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+                if self.stop ?? false {
+                    timer.invalidate()
+                }
+                self.checkForScreenCapture()
+            }
+        } else {
+            // Fallback on earlier versions
+            if !(gameTimer?.isValid ?? false) {
+                gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+                // gameTimer?.fire()
+            }
+        }
+    }
+    
+     /// End monitoring for screen capture
+    open func endMonitor() {
+        stop = false
+        gameTimer?.invalidate()
+    }
+    
+    @objc internal func runTimedCode() {
+        if stop ?? false {
+            gameTimer?.invalidate()
+        }
+    }
+    
+    private func checkForScreenCapture() {
         var isCaptured: Bool = false
         if #available(iOS 11.0, *) {
             isCaptured = screen.isCaptured
@@ -44,19 +76,10 @@ public class ScreenCaptureRecordingDetector {
         // gameTimer?.invalidate()
         if isCaptured {
             NotificationCenter.default.post(name: .screenCapturingStarted, object: isCaptured)
+            delegate?.didStartCapture()
         } else {
             NotificationCenter.default.post(name: .screenCapturingEnded, object: isCaptured)
+            delegate?.didEndCapture()
         }
     }
-    
-//    func monitor() {
-//        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-//            let randomNumber = Int.random(in: 1...20)
-//            print("Number: \(randomNumber)")
-//
-//            if randomNumber == 10 {
-//                timer.invalidate()
-//            }
-//        }
-//    }
 }

@@ -17,15 +17,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        _ = ScreenCaptureRecordingDetector.shared
-        NotificationCenter.default.addObserver(self, selector: #selector(show), name: .screenCapturingStarted, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(dimiss), name: .screenCapturingEnded, object: nil)
+        
+        /*
+         ///How to use using NotificationCenter
+         let monitor = ScreenCaptureRecordingDetector()
+         monitor.delegate = nil
+         monitor.startMonitor()
+         NotificationCenter.default.addObserver(self, selector: #selector(showScreen), name: .screenCapturingStarted, object: nil)
+         NotificationCenter.default.addObserver(self, selector: #selector(dimissScreen), name: .screenCapturingEnded, object: nil)
+         */
+        
+        /* ///How to use using Custom view
+         let appDelegate = UIApplication.shared.delegate as? AppDelegate
+         let overWindow = appDelegate?.window
+         let customView = UIView.init(frame: overWindow?.bounds ?? CGRect.init(x: 0, y: 0, width: 200, height: 200))
+         customView.backgroundColor = .yellow
+         
+         let screenCaptureDelegate = ScreenCaptureDelegateDefaultImpl.init(suspendView: customView, drawOver: overWindow)
+         let monitor = ScreenCaptureRecordingDetector(delegate: screenCaptureDelegate)
+         monitor.startMonitor()
+         */
+        
+        ///How to use using default instance
+        let monitor = ScreenCaptureRecordingDetector.default
+        monitor.startMonitor()
         return true
     }
     
-    @objc func show() {
+    @objc func showScreen() {
         view.frame = window?.bounds ?? CGRect.init(x: 0, y: 0, width: 200, height: 200)
-        view.backgroundColor = .red
+        view.backgroundColor = .blue
         
         let views = window?.subviews
         
@@ -34,18 +55,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window?.addSubview(view)
         }
-        //self.window?.addSubview(ScreenCaptureRecordingDetector.shared.imageview)
+        
     }
     
-    @objc func dimiss() {
-        
+    @objc func dimissScreen() {
         view.removeFromSuperview()
-        
         let views = window?.subviews
-        
         print(views?.count ?? 0)
     }
-    
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -71,4 +88,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
 }
+
 
