@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScreenCaptureDetector'
-  s.version          = '0.1.0'
-  s.summary          = 'ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded'
+  s.version          = '0.1.1'
+  s.summary          = 'ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded in addition to screenshot alert'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,7 @@ Pod::Spec.new do |s|
    s.description     = <<-DESC
    ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded by running task in background check every 1 sec check
    
-   * Headings (H1 - H6) and Body Text.
-   * Images (with captions), multiple images per row.
-   * Multi column text (can be used for borderless tables too)
-   * UIView instances (good for cover pages, etc)
-   * Any attributed string
+   * adds an overlay to your app when it is capture or mirrored
    
                          DESC
                          
@@ -38,13 +34,13 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'amrangry' => 'amr.elghadban@gmail.com' }
   s.source           = { :git => 'https://github.com/amrangry/ScreenCaptureDetector.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-   s.ios.deployment_target = '8.0'
+  s.social_media_url = 'https://twitter.com/amr_elghadban'
+  s.ios.deployment_target = '12.0'
   #s.source_files = 'ScreenCaptureDetector/Classes/**/*'
   s.source_files = 'Source/**/*.swift'
   s.swift_version = '5.0'
   s.platforms = {
-      "ios": "8.0"
+      "ios": "12.0"
   }
   # s.resource_bundles = {
   #   'ScreenCaptureDetector' => ['ScreenCaptureDetector/Assets/*.png']
