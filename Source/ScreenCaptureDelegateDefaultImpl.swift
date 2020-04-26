@@ -1,9 +1,11 @@
 //
 //  ScreenCaptureHandler.swift
-//  Pods-ScreenCaptureDetector_Example
+//  ADKATech.com
 //
 //  Created by AmrAngry on 4/25/20.
+//  Copyright © 2020 ADKA Tech. All rights reserved.
 //
+
 
 import Foundation
 import UIKit
@@ -16,6 +18,7 @@ final class ScreenCaptureDelegateDefaultImpl: NSObject {
     var window: UIWindow? {
         didSet {
             customView.frame = window?.bounds ?? CGRect.init(x: 0, y: 0, width: 200, height: 200)
+            customView.layoutIfNeeded()
         }
     }
     
@@ -24,11 +27,10 @@ final class ScreenCaptureDelegateDefaultImpl: NSObject {
         customView = UIView()
         customView.backgroundColor = .red
         
-        //        if let applicationwindow = UIApplication.shared.delegate?.window {
-        //            window = applicationwindow
-        //        }
         if let applicationWindow = UIApplication.shared.windows.first {
             window = applicationWindow
+            customView.frame = window?.bounds ?? CGRect.init(x: 0, y: 0, width: 200, height: 200)
+            customView.layoutIfNeeded()
         }
         
         super.init()
@@ -61,7 +63,6 @@ extension ScreenCaptureDelegateDefaultImpl: ScreenCaptureDelegate {
     
     func didEndCapture() {
         customView.removeFromSuperview()
-        //let views = window?.subviews
-        //print(views?.count ?? 0)
     }
 }
+
