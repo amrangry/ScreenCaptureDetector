@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         
         ///How to use using default instance
-        let monitor = ScreenCaptureRecordingDetector.default
+        let monitor = ScreenCaptureRecordingDetector.createDafaultInstnace()
         monitor.startMonitor()
         return true
     }
