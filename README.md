@@ -1,7 +1,6 @@
 
 <p align="center">
   <img src ="https://github.com/amrangry/ScreenCaptureDetector/blob/master/Example/ScreenCaptureDetector/Images.xcassets/icon.imageset/icon.png?raw=true"/>
-          Screen Capture Detector
 </p>
 
 # ScreenCaptureDetector
