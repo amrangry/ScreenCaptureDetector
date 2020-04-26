@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ScreenCaptureDetector'
   s.version          = '0.1.1'
-  s.summary          = 'ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded in addition to screenshot alert'
+  s.summary          = 'helper tool intervene if App being captured via mirror screen or recorded in addition to screenshot alert'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,10 +19,8 @@ Pod::Spec.new do |s|
 
 
    s.description     = <<-DESC
-   ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded by running task in background check every 1 sec check
-   
+   ScreenCaptureDetector is heler tool that can detect if the application is being capture via mirror screen or recorded in addition to screenshot alert by running task in background check every 1 sec check
    * adds an overlay to your app when it is capture or mirrored
-   
                          DESC
                          
   # s.description      = <<-DESC
