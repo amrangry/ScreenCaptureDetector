@@ -176,21 +176,12 @@
 		66765C285B32C678C2781CD8500D0556 /* ScreenCaptureDetector */ = {
 			isa = PBXGroup;
 			children = (
-				8442B4282455A58D002237D6 /* Media */,
 				84E128D92452273200F5ACEF /* Source */,
 				58B765451A458678FE9405C8D115C008 /* Pod */,
 				38290A6B2E2FB11E2C48793206B0A4AD /* Support Files */,
 			);
 			name = ScreenCaptureDetector;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		8442B4282455A58D002237D6 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Media;
-			path = Example/ScreenCaptureDetector/Media;
 			sourceTree = "<group>";
 		};
 		84E128D92452273200F5ACEF /* Source */ = {

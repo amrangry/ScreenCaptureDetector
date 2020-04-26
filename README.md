@@ -21,7 +21,7 @@
 ##  Picture says a thousand words
 ---
 
-![Alt text](https://github.com/amrangry/NYTimes/blob/master/project_demo_gif.gif?raw=true "sample")
+![Alt text](https://github.com/amrangry/ScreenCaptureDetector/blob/master/Example/ScreenCaptureDetector/Images.xcassets/screendetector.dataset/screendetector.gif?raw=true "Screen Player")
 
 
 ## Example
@@ -45,17 +45,50 @@ pod 'ScreenCaptureDetector'
 
 ## How To Use
 
-Simply import ScreenBlocker-iOS in AppDelegate:
-import ScreenBlocker_iOS
+Simply import ScreenCaptureDetector in AppDelegate:
+import ScreenCaptureDetector
 
-Add the following to AppDelegate's applicationWillResignActive:
-ScreenBlocker.shared.show()
-or
-ScreenBlocker.shared.show(bgColor: UIColor.someColor)
+Add the following to AppDelegate's didFinishLaunchingWithOptions:
+```ruby
+///How to use using default instance
+let monitor = ScreenCaptureRecordingDetector.createDafaultInstnace()
+monitor.startMonitor()
+```
+Or "Recommended"
+```ruby
 
-Add the following to AppDelegate's applicationDidBecomeActive:
-ScreenBlocker.shared.hide()
-
+1- conform protocol ScreenCaptureDelegate that has 3 optional func :
+       func didStartCapture()
+       func didEndCapture()
+       func didTakeScreenshot()
+       
+2- passing the conformed class to the init method of ScreenCaptureRecordingDetector
+3- calling method startMonitor() to start
+4- calling method endMonitor()  to stop 
+  
+``` 
+Or
+```ruby
+        ///How to use using NotificationCenter
+        let monitor = ScreenCaptureRecordingDetector()
+        monitor.delegate = nil
+        monitor.startMonitor()
+        NotificationCenter.default.addObserver(self, selector: #selector(showScreen), name: .screenCapturingStarted, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(dimissScreen), name: .screenCapturingEnded, object: nil)
+       
+```   
+Or
+```ruby
+        ///How to use using Custom view
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let overWindow = appDelegate?.window
+        let customView = UIView.init(frame: overWindow?.bounds ?? CGRect.init(x: 0, y: 0, width: 200, height: 200))
+        customView.backgroundColor = .yellow
+        
+        let screenCaptureDelegate = ScreenCaptureDelegateDefaultImpl(suspendView: customView, drawOver: overWindow)
+        let monitor = ScreenCaptureRecordingDetector(delegate: screenCaptureDelegate)
+        monitor.startMonitor()
+``` 
 ## Environment
 ---
 ```ruby
