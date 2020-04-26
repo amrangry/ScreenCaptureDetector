@@ -1,7 +1,7 @@
 
 <p align="center">
-  <img src ="https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png?raw=true"/>
-                     https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png
+  <img src ="https://github.com/amrangry/ScreenCaptureDetector/blob/master/Example/ScreenCaptureDetector/Images.xcassets/icon.imageset/icon.png?raw=true"/>
+          Screen Capture Detector
 </p>
 
 # ScreenCaptureDetector
