@@ -10,7 +10,7 @@ import UIKit
 
 /// ScreenCaptureRecordingDetector Class
 /// reponsible for start and end monitoring for screencapture
-public class ScreenCaptureRecordingDetector {
+final public class ScreenCaptureRecordingDetector {
     
     /// default instance for handling the Capture screen
     // public static let `default` = ScreenCaptureRecordingDetector()
@@ -25,7 +25,7 @@ public class ScreenCaptureRecordingDetector {
     /// True if this screen is being captured (e.g. recorded, AirPlayed, mirrored, etc.)
     /// False if mirroring is disabled or unsupported
     /// Readonly properity
-    open var isCaptured: Bool {
+    public var isCaptured: Bool {
         return isCapture()
     }
     
@@ -54,14 +54,14 @@ public class ScreenCaptureRecordingDetector {
     
     /// Create instnace that has default implementation
     /// @return ScreenCaptureRecordingDetector
-    static func createDafaultInstnace() -> ScreenCaptureRecordingDetector {
+    public static func createDafaultInstnace() -> ScreenCaptureRecordingDetector {
         let handler = ScreenCaptureDelegateDefaultImpl.default
         let instance = ScreenCaptureRecordingDetector(delegate: handler)
         return instance
     }
     
     /// start monitoring for screen capture
-    open func startMonitor() {
+    public func startMonitor() {
         if #available(iOS 10.0, *) {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
                 if self.stop ?? false {
@@ -79,7 +79,7 @@ public class ScreenCaptureRecordingDetector {
     }
     
     /// End monitoring for screen capture
-    open func endMonitor() {
+    public func endMonitor() {
         stop = false
         purgeDependancies()
     }
