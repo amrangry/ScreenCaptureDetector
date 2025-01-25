@@ -99,9 +99,7 @@ Swift 5.0
 ```
 
 ## Author
-AmrAngry, <a href="mailto:amr.elghadban@gmail.com">amr.elghadban@gmail.com</a>
-
-[Send Email](mailto:amr.elghadban@gmail.com?subject=I%20checked%20your%20GitHub%20repo!)
+[Send Email](mailto:amr.elghadban@gmail.com?subject=I%20checked%20your%20GitHub%20repo!) : <a href="mailto:amr.elghadban@gmail.com">amr.elghadban@gmail.com</a>
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/amr_elghadban?style=social)](https://twitter.com/intent/follow?screen_name=amr_elghadban)
 
